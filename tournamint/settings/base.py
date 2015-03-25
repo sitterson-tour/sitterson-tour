@@ -12,6 +12,16 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+# here() gives us file paths from the root of the system to the directory
+# holding the current file.
+# here = lambda * x: os.path.join(os.path.abspath(os.path.dirname(__file__)), *x)
+
+# PROJECT_ROOT = here("..")					
+
+# root() gives us file paths from the root of the system to whatever
+# folder(s) we pass it starting at the parent directory of the current file.
+# root = lambda * x: os.path.join(os.path.abspath(PROJECT_ROOT), *x)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -24,8 +34,13 @@ DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+# ADMINS = (
+# 	('Curtis Bowman', 'c.bowman1711@gmail.com'),
+# )
 
+# MANAGERS = ADMINS
+
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -51,7 +66,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -59,7 +73,6 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'tournamint.urls'
 
 WSGI_APPLICATION = 'tournamint.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -84,8 +97,19 @@ USE_L10N = True
 
 USE_TZ = True
 
+# MEDIA_ROOT = root("..", "uploads")
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.7/howto/static-files/
+# # Static files (CSS, JavaScript, Images)
+# # https://docs.djangoproject.com/en/1.7/howto/static-files/
+
+# STATIC_ROOT = root("..", "static")
 
 STATIC_URL = '/static/'
+
+# STATICFILES_DIRS = (
+# 	root("assets")
+# )
+
+# TEMPLATE_DIRS = (
+# 	root("templates")
+# )
