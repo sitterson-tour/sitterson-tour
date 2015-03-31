@@ -1,6 +1,7 @@
 from django.http import HttpResponse
+from django.views.generic import TemplateView
+from django.conf.urls import patterns
 
-def home(request):
-	html = ""
-	return HttpResponse(html)
+class HomeView(TemplateView):
+	template_name = "home.html"
 	
