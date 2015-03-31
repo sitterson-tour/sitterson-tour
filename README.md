@@ -5,5 +5,3 @@ sudo pip install virtualenv
 sudo pip intsall django==1.5
 
 //git cbne https://github.com/sitterson-tour/tournamint... (?)
-
-//'sudo' is akin to 'runas' in windows-based machines.
