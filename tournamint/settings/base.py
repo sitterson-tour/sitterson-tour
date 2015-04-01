@@ -103,11 +103,7 @@ MEDIA_ROOT = root("..", "uploads")
 # # Static files (CSS, JavaScript, Images)
 # # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-<<<<<<< HEAD
-STATIC_ROOT = root("..", "static")
-=======
 STATIC_ROOT = '/var/www/tournamint/static/'
->>>>>>> move static root to /var/www/tournamint/static/
 
 STATIC_URL = '/static/'
 
