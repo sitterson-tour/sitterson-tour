@@ -23,6 +23,17 @@
 
 <body>
 
+    <div class="photo">
+    </div>
+
+    <div class="video">
+    </div>
+    
+    <div class="audio>
+    </div>
+    
+    <div class="text">
+    </div>
 
 </body>
 
