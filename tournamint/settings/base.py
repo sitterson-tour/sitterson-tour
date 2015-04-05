@@ -58,6 +58,7 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
+	
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -107,14 +108,19 @@ MEDIA_ROOT = root("..", "uploads")
 # # Static files (CSS, JavaScript, Images)
 # # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_ROOT = '/var/www/tournamint/static/'
+STATIC_ROOT = root("static")
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-	root("assets")
+	'/var/www/tournamint/static/',
+)
+
+STATICFILES_FINDERS = (
+	'django.contrib.staticfiles.finders.FileSystemFinder',
+	'django.contrib.staticfiles.finder.AppDirectoriesFinder',
 )
 
 TEMPLATE_DIRS = (
-	root("templates")
+	root("templates"),
 )
