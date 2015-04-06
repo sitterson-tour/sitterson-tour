@@ -2,22 +2,15 @@ from os.path import abspath, basename, dirname, join, normpath
 from sys import path
 
 
-BASE_DIR = dirname(dirname(__file__))
+
 DJANGO_ROOT = dirname(dirname(abspath(__file__)))
 
-# here() gives us file paths from the root of the system to the directory
-# holding the current file.
-here = lambda * x: join(abspath(dirname(__file__)), *x)
+SITE_ROOT = dirname(DJANGO_ROOT)
 
-PROJECT_ROOT = here("..")					
+SITE_NAME = basename(DJANGO_ROOT)
 
-# root() gives us file paths from the root of the system to whatever
-# folder(s) we pass it starting at the parent directory of the current file.
-root = lambda * x: join(abspath(PROJECT_ROOT), *x)
+path.append(DJANGO_ROOT)
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'sq!7+g1&uq#fn#!+1h5%kti%l1y!-s+d3_lsk%z0hn-pi-85#8'
@@ -48,6 +41,7 @@ DJANGO_APPS = (
 
 THIRD_PARTY_APPS = (
 	'bootstrap3',
+	'south',
 )
 
 LOCAL_APPS = (
@@ -65,9 +59,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'tournamint.urls'
+ROOT_URLCONF = '%s.urls' % SITE_NAME
 
-WSGI_APPLICATION = 'tournamint.wsgi.application'
+WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -96,17 +90,19 @@ USE_L10N = True
 
 USE_TZ = True
 
-MEDIA_ROOT = root("..", "uploads")
+MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
+
+MEDIA_URL = '/media/'
 
 # # Static files (CSS, JavaScript, Images)
 # # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_ROOT = root("static")
+STATIC_ROOT = normpath(join(SITE_ROOT, 'assets'))
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-	'/var/www/tournamint/static/',
+	normpath(join(SITEROOT, 'static')),
 )
 
 STATICFILES_FINDERS = (
@@ -115,5 +111,5 @@ STATICFILES_FINDERS = (
 )
 
 TEMPLATE_DIRS = (
-	root("templates"),
+	normpath(join(SITE_ROOT, 'template')),
 )
