@@ -1,26 +1,19 @@
-"""
-Django settings for tournamint project.
+from os.path import abspath, basename, dirname, join, normpath
+from sys import path
 
-For more information on this file, see
-https://docs.djangoproject.com/en/1.7/topics/settings/
 
-For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.7/ref/settings/
-"""
-
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = dirname(dirname(__file__))
+DJANGO_ROOT = dirname(dirname(abspath(__file__)))
 
 # here() gives us file paths from the root of the system to the directory
 # holding the current file.
-here = lambda * x: os.path.join(os.path.abspath(os.path.dirname(__file__)), *x)
+here = lambda * x: join(abspath(dirname(__file__)), *x)
 
 PROJECT_ROOT = here("..")					
 
 # root() gives us file paths from the root of the system to whatever
 # folder(s) we pass it starting at the parent directory of the current file.
-root = lambda * x: os.path.join(os.path.abspath(PROJECT_ROOT), *x)
+root = lambda * x: join(abspath(PROJECT_ROOT), *x)
 
 
 # Quick-start development settings - unsuitable for production
