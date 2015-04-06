@@ -102,7 +102,7 @@ STATIC_ROOT = normpath(join(SITE_ROOT, 'assets'))
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-	normpath(join(SITEROOT, 'static')),
+normpath(join(SITE_ROOT, 'static')),
 )
 
 STATICFILES_FINDERS = (
@@ -111,5 +111,5 @@ STATICFILES_FINDERS = (
 )
 
 TEMPLATE_DIRS = (
-	normpath(join(SITE_ROOT, 'template')),
+	normpath(join(SITE_ROOT, 'templates')),
 )
