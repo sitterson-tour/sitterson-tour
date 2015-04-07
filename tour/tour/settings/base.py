@@ -73,7 +73,7 @@ DATABASES = {
 		'USER': 'tournamint',
 		'PASSWORD': 'tournamint',
 		'HOST': 'localhost',
-		'PORT': '',
+		'PORT': '5432',
     }
 }
 
