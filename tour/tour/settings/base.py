@@ -36,7 +36,8 @@ DJANGO_APPS = (
 )
 
 THIRD_PARTY_APPS = (
-	'bootstrap3',
+    'grappelli',
+    'bootstrap3',
 	'south',
 )
 
@@ -44,9 +45,7 @@ LOCAL_APPS = (
 'tour',
 )
 
-
-
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS = THIRD_PARTY_APPS + LOCAL_APPS + DJANGO_APPS
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -103,4 +102,8 @@ TEMPLATE_DIRS = (
 	normpath(join(SITE_ROOT, 'templates')),
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.request',
+)
 
