@@ -8,7 +8,7 @@ TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = ['tournamint.cs.unc.edu']
 
 
-databases = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'tournamint_db',

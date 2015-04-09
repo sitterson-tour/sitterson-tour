@@ -5,7 +5,7 @@ from .base import *
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-databases = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': normpath(join(DJANGO_ROOT, 'tournamint.db')),
