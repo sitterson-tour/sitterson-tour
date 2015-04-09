@@ -41,8 +41,10 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
-	
+'tour',
 )
+
+
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -55,9 +57,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = '%s.urls' % SITE_NAME
+ROOT_URLCONF = 'urls'
 
-WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
+WSGI_APPLICATION = 'wsgi.application' 
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -100,3 +102,5 @@ STATICFILES_FINDERS = (
 TEMPLATE_DIRS = (
 	normpath(join(SITE_ROOT, 'templates')),
 )
+
+

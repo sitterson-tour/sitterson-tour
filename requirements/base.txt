@@ -1,4 +1,4 @@
-Django==1.5.11
+Django==1.6
 django-bootstrap3==5.2.0
 ipython==3.1.0
 South==1.0.2
