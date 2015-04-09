@@ -16,17 +16,13 @@ path.append(DJANGO_ROOT)
 SECRET_KEY = 'sq!7+g1&uq#fn#!+1h5%kti%l1y!-s+d3_lsk%z0hn-pi-85#8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
 	('Curtis Bowman', 'c.bowman1711@gmail.com'),
 )
 
 MANAGERS = ADMINS
-
-ALLOWED_HOSTS = ['tournamint.cs.unc.edu']
 
 # Application definition
 
@@ -66,16 +62,7 @@ WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tournamint_db',
-		'USER': 'tournamint',
-		'PASSWORD': 'tournamint',
-		'HOST': 'localhost',
-		'PORT': '5432',
-    }
-}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
@@ -102,7 +89,7 @@ STATIC_ROOT = normpath(join(SITE_ROOT, 'assets'))
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-normpath(join(SITE_ROOT, 'static')),
+	normpath(join(SITE_ROOT, 'static')),
 )
 
 STATICFILES_FINDERS = (
