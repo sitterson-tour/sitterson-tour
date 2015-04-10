@@ -13,4 +13,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 	url(r'^contact/', TemplateView.as_view(template_name="contact.html")),
 	url(r'^stops/', TemplateView.as_view(template_name="tour-stops.html")),
+    url(r'^index/', TemplateView.as_view(template_name="index.html")),
 )
