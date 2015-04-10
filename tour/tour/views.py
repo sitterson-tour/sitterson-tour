@@ -6,4 +6,6 @@ from django.conf.urls import patterns
 class HomePageView(TemplateView):
     template_name = "index.html"
 
+class TourStopView(TemplateView):
+    template_name = "stop.html"
 	
