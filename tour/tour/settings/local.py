@@ -8,7 +8,7 @@ TEMPLATE_DEBUG = DEBUG
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': normpath(join(DJANGO_ROOT, 'tournamint.db')),
+        'NAME': normpath(join(SITE_ROOT, 'tournamint.db')),
     }
 }
 
