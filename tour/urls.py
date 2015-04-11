@@ -9,7 +9,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', HomePageView.as_view()),
-    url(r'^grappelli/', include('grappelli.urls')),
     url(r'^admin/', include(admin.site.urls)),
 	url(r'^contact/', TemplateView.as_view(template_name="contact.html")),
 	url(r'^stops/', TemplateView.as_view(template_name="stop.html")),
