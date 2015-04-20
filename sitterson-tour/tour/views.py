@@ -21,6 +21,13 @@ def tour_home_view(request, *args, **kwargs):
 
 	return render(request, template_name, context)
 
-def tour_stop_view(request, stop_slug=''):
-	return render(request, 'stop.html')
+def tour_stop_view(request, stop_slug):
+	stop = TourStop.objects.get(slug=stop_slug, published=True)
+	template_name = 'stop.html'
+
+	context = {
+		'stop': stop
+	}
+
+	return render(request, template_name, context)
 	
