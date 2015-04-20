@@ -4,7 +4,7 @@ from tour.models import TourStop
 
 class TourAdmin(admin.ModelAdmin):
 	date_hierarchy = "created"
-	fields = ('published', 'title', 'slug', 'content')
+	fields = ('published', 'title', 'subtitle', 'slug', 'content', 'description')
 	list_display = ['published', 'title', 'updated']
 	list_display_links = ['title']
 	list_editable  = ['published']

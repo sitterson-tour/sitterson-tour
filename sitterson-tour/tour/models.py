@@ -6,8 +6,10 @@ from django.template.defaultfilters import slugify
 class TourStop(models.Model):
     """Stop Model"""
     title = models.CharField( max_length=100)
+    subtitle = models.CharField(max_length=100)
     slug = models.SlugField( max_length=100)
     content = models.TextField()
+    description = models.TextField(max_length=255)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now_add=True)
     published = models.BooleanField(default=True)

@@ -17,7 +17,7 @@
 
     <!-- Bootstrap Core CSS -->
 
-
+    <link rel="icon" type="image/png" href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico">
     <!-- Custom CSS -->
     <link href="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap-clean-blog/gh-pages/css/clean-blog.min.css" rel="stylesheet">
 
@@ -48,20 +48,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="">Home</a>
                     </li>
                     <li>
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="../stops">Sample Stop</a>
+                        <a href="../stops">Stops</a>
                     </li>
                     <li>
                         <a href="../contact">Contact</a>
@@ -95,12 +94,12 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {% for stop in stop_list %}
                 <div class="post-preview">
-                    <a href="stops/">
+                    <a href="stop/{{ stop.slug }}">
                         <h2 class="post-title">
                             {{ stop.title }}
                         </h2>
                         <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
+                            {{ stop.description }}
                         </h3>
                     </a>
                 </div>

@@ -14,7 +14,8 @@
     <meta name="author" content="">
 
     <title>{{ stop.title }}</title>
-
+    
+    <link rel="icon" type="image/png" href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico">
 
     <!-- Custom CSS -->
     <link href="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap-clean-blog/gh-pages/css/clean-blog.min.css" rel="stylesheet">
@@ -46,20 +47,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="../">Home</a>
+                        <a href="../../">Home</a>
                     </li>
                     <li>
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="post.html">Sample Post</a>
+                        <a href="post.html">Stops</a>
                     </li>
                     <li>
                         <a href="../contact">Contact</a>
@@ -73,13 +73,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('http://upload.wikimedia.org/wikipedia/commons/0/02/Frederick_Brooks_IMG_2261.jpg')">
+    <header class="intro-header" style="background-image: url(http://www.fallsrivermusic.com/wp-content/uploads/2015/01/FRM-WEB-BACKGROUND-2.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
+                    <div class="site-heading">
                       <h1>{{ stop.title }}</h1>
-                        <h2 class="subheading">Turing Award Winner</h2>
+                      <hr class="small">
+                      <span class="subheading">{{ stop.subtitle }}</span>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,85 @@
+{
+	"fred-brooks-jr": {
+		"title": "Fred Brooks Jr.",
+
+		"subtitle": "Turing Award Winner",
+
+		"description": "Frederick Phillips Brooks, Jr. (born April 19, 1931) is an American computer architect, software engineer, and computer scientist, best known for managing the development of IBM's System/360 family of computers and the OS/360 software support package, then later writing candidly about the process in his seminal book The Mythical Man-Month.",
+		
+		"content": "Frederick Phillips Brooks, Jr. (born April 19, 1931) is an American computer architect, software engineer, and computer scientist, best known for managing the development of IBM's System/360 family of computers and the OS/360 software support package, then later writing candidly about the process in his seminal book The Mythical Man-Month.[5] Brooks has received many awards, including the National Medal of Technology in 1985 and the Turing Award in 1999.[6]
+
+		Born in Durham, North Carolina, he attended Duke University, graduating in 1953 with a Bachelor of Science degree in Physics, and he received a Ph.D. in Applied Mathematics (Computer Science) from Harvard University in 1956, supervised by Howard Aiken.[2]
+
+		Brooks joined IBM in 1956, working in Poughkeepsie, New York and Yorktown, New York. He worked on the architecture of the IBM 7030 Stretch, a $10m scientific supercomputer of which nine were sold, and the IBM 7950 Harvest computer for the National Security Agency. Subsequently, he became manager for the development of the System/360 family of computers and the OS/360 software package. During this time he coined the term computer architecture.
+
+		It was in The Mythical Man-Month that Brooks made the now-famous statement: \"Adding manpower to a late software project makes it later.\" This has since come to be known as the Brooks's law. In addition to The Mythical Man-Month, Brooks is also known for the paper No Silver Bullet — Essence and Accident in Software Engineering.
+
+		In 1965, Brooks accepted an invitation to come to the University of North Carolina at Chapel Hill and found the University's computer science department. He chaired it for 20 years. As of 2013 he was still engaged in active research there, primarily in virtual environments[7] and scientific visualization.[8]
+
+		In a 2010 interview by Kevin Kelly for an article[9] in Wired Magazine, Brooks was asked \"What do you consider your greatest technological achievement?\" Brooks responded \"The most important single decision I ever made was to change the IBM 360 series from a 6-bit byte to an 8-bit byte, thereby enabling the use of lowercase letters. That change propagated everywhere.\"
+
+		A \"20th anniversary\" edition of The Mythical Man-Month with four additional chapters was published in 1995.[10]
+
+		In January 2005 he gave the IEE/BCS annual Turing Lecture in London on the subject of \"Collaboration and Telecollaboration in Design\". In 1994 he was inducted as a Fellow of the Association for Computing Machinery.
+
+		As well as The Mythical Man-Month[5] Brooks has authored or co-authored many books and peer reviewed papers[6] including Automatic Data Processing,[11] No Silver Bullet,[12] Computer Architecture,[13] and The Design of Design.[14]
+
+		Frederick Phillips Brooks, Jr. (born April 19, 1931) is an American computer architect, software engineer, and computer scientist, best known for managing the development of IBM's System/360 family of computers and the OS/360 software support package, then later writing candidly about the process in his seminal book The Mythical Man-Month.[5] Brooks has received many awards, including the National Medal of Technology in 1985 and the Turing Award in 1999.[6]
+
+		Born in Durham, North Carolina, he attended Duke University, graduating in 1953 with a Bachelor of Science degree in Physics, and he received a Ph.D. in Applied Mathematics (Computer Science) from Harvard University in 1956, supervised by Howard Aiken.[2]
+
+		Brooks joined IBM in 1956, working in Poughkeepsie, New York and Yorktown, New York. He worked on the architecture of the IBM 7030 Stretch, a $10m scientific supercomputer of which nine were sold, and the IBM 7950 Harvest computer for the National Security Agency. Subsequently, he became manager for the development of the System/360 family of computers and the OS/360 software package. During this time he coined the term computer architecture.
+
+		It was in The Mythical Man-Month that Brooks made the now-famous statement: \"Adding manpower to a late software project makes it later.\" This has since come to be known as the Brooks's law. In addition to The Mythical Man-Month, Brooks is also known for the paper No Silver Bullet — Essence and Accident in Software Engineering.
+
+		In 1965, Brooks accepted an invitation to come to the University of North Carolina at Chapel Hill and found the University's computer science department. He chaired it for 20 years. As of 2013 he was still engaged in active research there, primarily in virtual environments[7] and scientific visualization.[8]
+
+		In a 2010 interview by Kevin Kelly for an article[9] in Wired Magazine, Brooks was asked \"What do you consider your greatest technological achievement?\" Brooks responded \"The most important single decision I ever made was to change the IBM 360 series from a 6-bit byte to an 8-bit byte, thereby enabling the use of lowercase letters. That change propagated everywhere.\"
+
+		A \"20th anniversary\" edition of The Mythical Man-Month with four additional chapters was published in 1995.[10]
+
+		In January 2005 he gave the IEE/BCS annual Turing Lecture in London on the subject of \"Collaboration and Telecollaboration in Design\". In 1994 he was inducted as a Fellow of the Association for Computing Machinery.
+
+		As well as The Mythical Man-Month[5] Brooks has authored or co-authored many books and peer reviewed papers[6] including Automatic Data Processing,[11] No Silver Bullet,[12] Computer Architecture,[13] and The Design of Design.[14]\""
+		},
+
+	"pixel-planes": {
+		"title": "Pixel Planes",
+
+		"subtitle": "3D Graphics System",
+
+		"description": "Since 1980, we have been exploring computer architectures for 3D graphics that, compared to today's systems, offer dramatically higher performance with wide flexibility for a broad range of applications.",
+
+		"content": "Since 1980, we have been exploring computer architectures for 3D graphics that, compared to today's systems, offer dramatically higher performance with wide flexibility for a broad range of applications. A major continuing motivation has been to provide useful systems for our researchers whose work in medical visualization, molecular modeling, and architectural design exploration requires graphics power far beyond that available in today's commercial systems. Since there does not appear to be a sizable market for such \"ultra-high-end\" and therefore very expensive, systems, commercial vendors do not seem to be exploring even the possibilities there. We have thus been able to build systems that exhibit new levels of performance, explore sometimes revolutionary graphics architectures, demonstrate the feasibility of some ideas, and at the same time provide systems with which our local colleagues can perform research years before they would be able to conduct it if they had to rely on commercial systems. We are now focusing on image-based rendering, with the goal of designing and building a high-performance graphics engine that uses images as the principal rendering primitive.  Browse our Web pages to learn more about our research, the history of the group, publications, etc."
+	},
+
+	"maze-day": {
+		"title": "Maze Day",
+
+		"subtitle": "Technology For Childeren With Visual Disabilities",
+
+		"content": "Maze Day invites K-12 students with visual impairments, along with their parents/guardians and teachers, to the Department to experience a wide variety of educational games and tools created just for them. For students who are often left out of school field trips and activities because they are not members of the sighted community, Maze Day provides a one-of-a-kind day of fun and learning.
+
+		In 2005, three Computer Science students from Dr. Gary Bishop’s Enabling Technology class developed a project to see whether children with visual impairments could complete a life size maze after practicing on a computer simulation with a force-feedback joystick.  The Computer Science students invited several students with visual impairments to test out the maze an hour before their class.
+
+		Once Dr. Bishop heard that so many visitors were coming just an hour before his class, he canceled class and began to set up a much larger event. Each student group set up a booth for the children to test out their games. The positive feedback from the children and parents who attended was so overwhelming that Maze Day became an annual event. Maze Day has been held for nine years, and each year has brought in approximately 100-150 students and adults.",
+
+		"description": "Maze Day invites K-12 students with visual impairments, along with their parents/guardians and teachers, to the Department to experience a wide variety of educational games and tools created just for them."
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
