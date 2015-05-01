@@ -1,6 +1,5 @@
 from django.test import TestCase
 from django.http import HttpRequest
-from tour.views import HomePageView, TourStopView
 from django.test import RequestFactory
 
 
