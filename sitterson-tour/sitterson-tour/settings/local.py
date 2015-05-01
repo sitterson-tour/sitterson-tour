@@ -17,6 +17,7 @@ from os.path import join, normpath
 from .base import *
 
 DEBUG = True
+
 TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
