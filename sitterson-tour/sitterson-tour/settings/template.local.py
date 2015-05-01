@@ -3,7 +3,7 @@
 """
 # Local Settings Template
 
-  * Copy this file into a local.py file, then fill in the details of this file for 
+  * Copy this file into a my_local.py file, then fill in the details of this file for 
     the specifics of your project. Each developer should make their own local settings
     file and it should not be kept in source control as it will contain secret 
     information such as admin passwords and api keys. 

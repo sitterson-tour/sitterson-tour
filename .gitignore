@@ -5,4 +5,4 @@
 *.pyc
 .env
 *.db
-sitterson-tour/settings/local.py
+my_local.py
