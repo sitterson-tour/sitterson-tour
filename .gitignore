@@ -3,6 +3,6 @@
 .#*
 #*#
 *.pyc
-db.sqlite3
 .env
 *.db
+sitterson-tour/sitterson-tour/settings/local.py

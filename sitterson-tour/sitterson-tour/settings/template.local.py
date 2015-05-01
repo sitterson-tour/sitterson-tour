@@ -12,6 +12,8 @@
 
       e.g. ***REPLACE_THIS***
 
+    Replace everything including the *'s.
+
 """
 from os.path import join, normpath
 from .base import *

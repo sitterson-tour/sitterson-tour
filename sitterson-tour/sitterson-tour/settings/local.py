@@ -1,4 +1,18 @@
-# settings/local.py
+# settings/template.local.py
+
+"""
+# Local Settings Template
+
+  * Copy this file into a local.py file, then fill in the details of this file for 
+    the specifics of your project. Each developer should make their own local settings
+    file and it should not be kept in source control as it will contain secret 
+    information such as admin passwords and api keys. 
+
+  * Values you need to replace are surounded by triple *'s:
+
+      e.g. ***REPLACE_THIS***
+
+"""
 from os.path import join, normpath
 from .base import *
 
@@ -6,11 +20,16 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
+	"""Settings for local sqlite database. If you don't already have a database,
+	   one will be created for you. Don't keep the database in source control."""
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': normpath(join(SITE_ROOT, 'tournamint.db')),
     }
 }
+
+ADMIN_USERNAME = 'crbowman'
+ADMIN_PASSWORD = 'pemdas!5roygbiv'
 
 
 
