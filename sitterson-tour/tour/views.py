@@ -23,7 +23,7 @@ def tour_home_view(request, *args, **kwargs):
 
 def tour_stop_view(request, stop_slug):
 	stop = TourStop.objects.get(slug=stop_slug, published=True)
-	template_name = 'stop.html'
+	template_name = 'stops.html'
 
 	context = {
 		'stop': stop
