@@ -28,7 +28,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -38,14 +38,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand" href="http://cs.unc.edu">UNC-CS</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                {% block navlinks %}
+                    {% block navlinks %}
                     <li>
-                        <a href="../../">Stops</a>
+                        <a href="/">Stops</a>
                     </li>
                     <li>
                         <a href="about/">About</a>
@@ -56,13 +57,14 @@
                     <li>
                         <a href="contact/">Contact</a>
                     </li>
-                 {% endblock %}
+                    {% endblock %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+
 
     <header class="intro-header" style="background-image: url(http://www.fallsrivermusic.com/wp-content/uploads/2015/01/FRM-WEB-BACKGROUND-2.jpg)">
         <div class="container">
@@ -88,7 +90,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="#">
+                            <a href="https://twitter.com/unccs">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -96,7 +98,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/unccompsci">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -104,10 +106,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.flickr.com/photos/unccompsci/">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
@@ -117,15 +119,18 @@
             </div>
         </div>
     </footer>
-
+    
+    {% block javascript %}
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="static/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+    <script src="static/js/clean-blog.min.js"></script>
+
+    {% endblock %}
 </body>
 
 
