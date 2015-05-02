@@ -2,7 +2,7 @@ from django.db import models
 from django.template.defaultfilters import slugify
 
 
-class TourStop(models.Model):
+class Stop(models.Model):
     """Stop Model"""
     title = models.CharField( max_length=100)
     subtitle = models.CharField(max_length=100, null=True, blank=True)
@@ -14,14 +14,13 @@ class TourStop(models.Model):
     published = models.BooleanField(default=True)
 
     def url(self):
-        url = 'tour.cs.unc/stop/{self.slug}'.format(self=self)
+        url = 'http://tour.cs.unc.edu/stop/{self.slug}/'.format(self=self)
         return url
-
-    
+ 
     def __unicode__(self):
 		return self.title
 
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.title)
-        super(TourStop, self).save(*args, **kwargs)
+        super(Stop, self).save(*args, **kwargs)

@@ -1,0 +1,52 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Log In | Sitterson Tour {% endblock %}
+
+{% block extrastyle %}
+<style>
+	#header {
+		background-color: #567CA6;
+		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	}
+	#content {
+		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	}
+	.module h2, .module caption, .inline-group h2 {
+		background: #567CA6;
+		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+		font-weight: normal;
+	}
+	h1 {
+		color: #567CA6;
+		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+		font-weight: normal;
+	}
+	form .aligned p, form .aligned ul {
+		font-weight: bold;
+		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	}
+	.submit-row input .submit-row p.deletelink-box{
+		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	}
+	.dashboard .module table td {
+		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;	
+	}
+
+</style>
+{% endblock %}
+
+
+{% block extrahead %}
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico">
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Sitterson Tour</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

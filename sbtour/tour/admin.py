@@ -1,13 +1,13 @@
 from django.contrib import admin
 
-from tour.models import TourStop
+from tour.models import Stop
 
 
-class TourAdmin(admin.ModelAdmin):
+class StopAdmin(admin.ModelAdmin):
 	date_hierarchy = "created"
-	fieldset = [("Stop Info", 
-					{'fields': [('published', 'title',), 'subtitle','content', 'description']}),
-				("QR Code",
+	fieldsets = [('Stop Info', 
+					{'fields': [('title', 'published',), 'subtitle','content', 'description']}),
+				('QR Code',
 					{'fields': ['slug', 'url']})]
 	readonly_fields = ['url']
 	list_display = ['published', 'title', 'updated']
@@ -21,6 +21,6 @@ class TourAdmin(admin.ModelAdmin):
 		return obj.url()
 	
 
-admin.site.register(TourStop, TourAdmin)
+admin.site.register(Stop, StopAdmin)
 
 
