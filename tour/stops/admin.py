@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.db import models
 from django import forms
-from tour.models import Stop
+from .models import Stop
 
 
 class StopAdmin(admin.ModelAdmin):
