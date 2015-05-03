@@ -12,10 +12,5 @@ class HomePageViewTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
 
-class TourStopViewTest(TestCase):
 
-    def test_tour_stop_page(self):
-        request = RequestFactory().get('/stop/')
-        response = tour_stop_view(request, 'pixel-planes')
-        self.assertEqual(response.status_code, 200)
 
