@@ -1,10 +1,12 @@
 from django.contrib import admin
-
+from django.db import models
+from django import forms
 from tour.models import Stop
 
 
 class StopAdmin(admin.ModelAdmin):
 	date_hierarchy = "created"
+	formfield_overrides = { models.TextField: {'widget': forms.Textarea(attrs={'class':'ckeditor'})},}
 	fieldsets = [('Stop Info', 
 					{'fields': [('title', 'published',), 'subtitle','content', 'description']}),
 				('QR Code',
@@ -19,6 +21,9 @@ class StopAdmin(admin.ModelAdmin):
 
 	def url(self, obj):
 		return obj.url()
+
+	class Media:
+		js = ('ckeditor/ckeditor.js',)
 	
 
 admin.site.register(Stop, StopAdmin)

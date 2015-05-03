@@ -104,7 +104,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.request',
 )
-    
 
 BOOTSTRAP3 = {
 
@@ -161,31 +160,4 @@ BOOTSTRAP3 = {
         'default': 'bootstrap3.renderers.FieldRenderer',
         'inline': 'bootstrap3.renderers.InlineFieldRenderer',
     },
-}
-
-
-SUIT_CONFIG = {
-    # header
-    'ADMIN_NAME': 'Tour Admin',
-    # 'HEADER_DATE_FORMAT': 'l, j. F Y',
-    # 'HEADER_TIME_FORMAT': 'H:i',
-
-    # forms
-    'SHOW_REQUIRED_ASTERISK': True,  # Default True
-    'CONFIRM_UNSAVED_CHANGES': True, # Default True
-
-    # menu
-    'SEARCH_URL': '/admin/auth/user/',
-    'MENU_ICONS': {
-       'sites': 'icon-leaf',
-       'auth': 'icon-lock',
-    },
-    'MENU_OPEN_FIRST_CHILD': True, # Default True
-    'MENU': (
-        'sites',
-        {'app': 'auth', 'icon':'icon-lock', 'models': ('user', 'group')},
-    ),
-
-    # misc
-    # 'LIST_PER_PAGE': 15
 }
