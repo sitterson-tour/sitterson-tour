@@ -5,4 +5,7 @@
 *.pyc
 .env
 *.db
-my_local.py
+.vagrant/
+*.sublime-project
+*.sublime-workspace
+
