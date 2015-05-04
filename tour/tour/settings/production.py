@@ -1,5 +1,6 @@
 # settings/production.py
 
+from os.path import join, normpath
 from .base import *
 
 DEBUG = False
