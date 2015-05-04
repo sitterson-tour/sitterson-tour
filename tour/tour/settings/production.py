@@ -9,12 +9,8 @@ ALLOWED_HOSTS = ['tournamint.cs.unc.edu']
 
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tournamint_db',
-		'USER': 'tournamint',
-		'PASSWORD': 'tournamint',
-		'HOST': 'localhost',
-		'PORT': '5432',
+  'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': normpath(join(SITE_ROOT, 'tour.db')),
     }
 }
