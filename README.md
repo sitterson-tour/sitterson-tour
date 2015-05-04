@@ -5,8 +5,9 @@ Sitterson Tour Django Project
 This project is intended to run on an Ubuntu linux system in production. To reliably emulate this environment for development we will be using two tools, Vagrant and Virtualbox. By virtualizing our develoment environments we can also install the system much more quickly, and with reproducability across a wide range of OSes. 
 
 ## Install Vagrant and Virtualbox:
-(Vagrant)[https://www.vagrantup.com/downloads.html]
-(Virtualbox)[https://www.virtualbox.org/wiki/Downloads]
+[Vagrant](https://www.vagrantup.com/downloads.html)
+
+[Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 ## Clone this Repository:
 ````
