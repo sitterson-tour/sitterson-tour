@@ -42,17 +42,18 @@ sudo pip install -r local.txt
 cd /vagrant/tour/
 python manage.py syncdb
 ```
-THe syncdb will ask you to create a new user. Creat one with the username: demo, and password: demo. This account will be used by our functional testing suite. 
+The syncdb command will ask you to create a new user. Creat one with the `username: demo`, and `password: demo`. This account will be used by our functional testing suite. 
 
 ## Start Development Server
 ```
 python manage.py runserver 0.0.0.0:8000 --settings=tour.settings.dev
 ```
 
-I recomend saving that command in a script or an alias that allows you to quickly launch your app. 
+I recommend saving that command in a script or an alias that allows you to quickly launch your app. 
 
 ## Check to see if it's working
 
-Back on your host machine open up a webrowser. You should be able to see the app running at: localhost:8888/
+Back on your host machine open up a webrowser. You should be able to see the app running at: 
+[localhost:8888/](localhost:8888/)
 
-You can access the admin interface at: localhost:8888/admin/
+You can access the admin interface at: [localhost:8888/admin/](localhost:/8888)
