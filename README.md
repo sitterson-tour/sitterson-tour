@@ -54,7 +54,7 @@ I recommend saving that command in a script or an alias that allows you to quick
 ## Check to see if it's working
 
 Back on your host machine open up a webrowser. You should be able to see the app running at: 
-*[localhost:8888](http://localhost:8888/)
+* [localhost:8888](http://localhost:8888/)
 
 You can access the admin interface at: 
-*[localhost:8888/admin](http://localhost:8888/admin/)
+* [localhost:8888/admin](http://localhost:8888/admin/)
