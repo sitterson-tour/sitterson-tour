@@ -26,3 +26,33 @@ The first time you run this it will take some time (15+ minutes). This is becaus
 ```
 vagrant ssh
 ```
+## Set up Virtualenv
+Virtualenv is a tool that helps us isolate our python level dependencies. We can guarantee that we're always running with the same python packages, which helps keep our environments consistant. Run the following commands after ssh-ing into your vagrant box. If you want to understand what it's doing take a look at this [virtualenv tutorial](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+```
+cd ~/
+virtualenv venv
+source venv/bin/activate
+cd /vagrant/requrements
+sudo pip install -r local.txt
+```
+
+## Create Database
+
+```
+cd /vagrant/tour/
+python manage.py syncdb
+```
+THe syncdb will ask you to create a new user. Creat one with the username: demo, and password: demo. This account will be used by our functional testing suite. 
+
+## Start Development Server
+```
+python manage.py runserver 0.0.0.0:8000 --settings=tour.settings.dev
+```
+
+I recomend saving that command in a script or an alias that allows you to quickly launch your app. 
+
+## Check to see if it's working
+
+Back on your host machine open up a webrowser. You should be able to see the app running at: localhost:8888/
+
+You can access the admin interface at: localhost:8888/admin/
