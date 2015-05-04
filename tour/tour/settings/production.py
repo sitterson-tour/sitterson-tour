@@ -1,6 +1,5 @@
 # settings/production.py
 
-from os.path import join, normpath
 from .base import *
 
 DEBUG = False
@@ -10,8 +9,12 @@ ALLOWED_HOSTS = ['tournamint.cs.unc.edu']
 
 
 DATABASES = {
-  'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': normpath(join(SITE_ROOT, 'tour.db')),
+     'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'tournamint_db',
+		'USER': 'tournamint',
+		'PASSWORD': 'tournamint',
+		'HOST': 'localhost',
+		'PORT': '5432',
     }
 }
