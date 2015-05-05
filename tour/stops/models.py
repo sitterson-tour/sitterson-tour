@@ -1,5 +1,8 @@
 from django.db import models
+import qrcode
 from django.template.defaultfilters import slugify
+from os.path import join, normpath
+from tour.settings.base import SITE_ROOT
 
 
 class Stop(models.Model):
@@ -16,7 +19,17 @@ class Stop(models.Model):
     def url(self):
         url = 'http://tour.cs.unc.edu/stop/{self.slug}/'.format(self=self)
         return url
- 
+
+    def qrcode(self):
+        url = self.url()
+        img = qrcode.make(url)
+        filename = normpath(join(SITE_ROOT, 'assets/qrcodes/{self.slug}.png'.format(self=self)))
+        with open(filename, 'w') as f:
+            img.save(f)
+
+        qr_path = 'tournamint.cs.unc.edu/static/qrcodes/{self.slug}.png'.format(self=self)
+        return qr_path
+
     def __unicode__(self):
 		return self.title
 

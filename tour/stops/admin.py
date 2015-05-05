@@ -10,8 +10,8 @@ class StopAdmin(admin.ModelAdmin):
 	fieldsets = [('Stop Info', 
 					{'fields': [('title', 'published',), 'subtitle','content', 'description']}),
 				('QR Code',
-					{'fields': ['slug', 'url']})]
-	readonly_fields = ['url']
+					{'fields': ['slug', 'url', 'qrcode']})]
+	readonly_fields = ['url', 'qrcode']
 	list_display = ['published', 'title', 'updated']
 	list_display_links = ['title']
 	list_editable  = ['published']
