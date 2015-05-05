@@ -17,7 +17,7 @@ class Stop(models.Model):
     published = models.BooleanField(default=True)
 
     def url(self):
-        url = 'http://tour.cs.unc.edu/stop/{self.slug}/'.format(self=self)
+        url = 'http://tournamint.cs.unc.edu/stop/{self.slug}/'.format(self=self)
         return url
 
     def qrcode(self):
@@ -27,7 +27,7 @@ class Stop(models.Model):
         with open(filename, 'w') as f:
             img.save(f)
 
-        qr_path = 'tournamint.cs.unc.edu/static/qrcodes/{self.slug}.png'.format(self=self)
+        qr_path = 'http://tournamint.cs.unc.edu/static/qrcodes/{self.slug}.png'.format(self=self)
         return qr_path
 
     def __unicode__(self):
